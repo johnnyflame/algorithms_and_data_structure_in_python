@@ -123,9 +123,53 @@ def sum_of_squared_odd_integer_built_int(n):
     return sum(i*i for i in n if not is_even(i))
 
 
+
 """
     R-1.8
 
-    Python allows negative integers to be used as indices into a sequence, such as a          string. If string s has length n, and expression s[k] is used for in- dex −n ≤ k < 0,     what is the equivalent index j ≥ 0 such that s[j] references the same element?
+    Python allows negative integers to be used as indices into a sequence, such as a 
+    string. If string s has length n, and expression s[k] is used for index −n ≤ k < 0, 
+    what is the equivalent index j ≥ 0 such that s[j] references the same element?
+    
+    len(n) - abs(k)
+    
+    i.e:
+    
+    a = [x for x in range(0,10)]
+    k = -3
+    assert a[k] == a[len(a)-abs(k)]
+    
+    this would evaluate to True
 """
 
+"""
+
+R-1.9 What parameters should be sent to the range constructor, to produce a range with values 50, 60, 70, 80?
+
+A:
+
+for i in range(50,90,10):
+    print(i)
+    
+
+
+R-1.10 What parameters should be sent to the range constructor, 
+to produce a range with values 8, 6, 4, 2, 0, −2, −4, −6, −8?
+
+Answer:
+
+for i in range(8,-9,-2):
+    print (i)
+
+
+
+R-1.11
+
+Demonstrate how to use Python’s list comprehension syntax 
+to produce the list [1, 2, 4, 8, 16, 32, 64, 128, 256].
+
+x = [i << in range(0,10,1
+
+
+
+"""
